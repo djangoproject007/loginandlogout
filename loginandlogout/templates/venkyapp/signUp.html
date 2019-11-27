@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%extends 'venkyapp/base.html'%}
+      {%block body-block%}
+      <div class="container" align="center">
+        <div class="jumbotron">
+          <h1>SignUp to getin</h1>
+          <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <button type="submit" name="button">SignUP</button>
+          </form>
+
+        </div>
+
+      </div>
+      {%endblock%}
